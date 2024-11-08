@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Synonyms Web App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Translate-like Translator Tool</title>
+    <link rel="stylesheet" href="/CSS/translateStyle.css">
+    <link rel="stylesheet" href="/CSS/flexbox.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="imageDiv">
+        <a href="/HTML/wordle.html"
+          ><img
+            class="image"
+            src="/IMAGES/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="/HTML/wordle.html" class="logoText">HustleWords</a>
+      </div>
+
+      <div class="search"></div>
+
+      <div class="dictionary">
+        <a href="/HTML/proiect Timisoara.html" class="left"
+          ><strong>Dictionary</strong></a
+        >
+      </div>
+
+      <div class="synonyms">
+        <a href="/HTML/Synonimes.html" class="left"><strong>Translate</strong></a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Google Translate-like Tool</h1>
+      <textarea id="textInput" placeholder="Enter text to translate..." rows="4"></textarea>
+      <div class="language-selector">
+          <select id="sourceLanguage">
+              <option value="ar">Arabic</option>
+              <option value="de">German</option>
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="hi">Hindi</option>
+              <option value="it">Italian</option>
+              <option value="ko">Korean</option>
+              <option value="ja">Japanese</option>
+              <option value="pl">Polish</option>
+              <option value="pt">Portuguese</option>
+              <option value="ro">Romanian</option> <!-- Added Romanian -->
+              <option value="ru">Russian</option>
+              <option value="sv">Swedish</option>
+              <option value="tr">Turkish</option>
+              <option value="zh">Chinese (Simplified)</option>
+          </select>
+          <span>to</span>
+          <select id="targetLanguage">
+              <option value="ar">Arabic</option>
+              <option value="de">German</option>
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="hi">Hindi</option>
+              <option value="it">Italian</option>
+              <option value="ko">Korean</option>
+              <option value="ja">Japanese</option>
+              <option value="pl">Polish</option>
+              <option value="pt">Portuguese</option>
+              <option value="ro">Romanian</option> <!-- Added Romanian -->
+              <option value="ru">Russian</option>
+              <option value="sv">Swedish</option>
+              <option value="tr">Turkish</option>
+              <option value="zh">Chinese (Simplified)</option>
+          </select>
+      </div>
+      <div id="translationResult" class="translation-result"></div>
+  </div>
+  <script src="/JavaScript/translateScript.js"></script>
+  </body>
+</html>
