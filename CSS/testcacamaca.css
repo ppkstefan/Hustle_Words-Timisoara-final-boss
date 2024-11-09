@@ -1,0 +1,243 @@
+/* General styling for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  display:block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1e42;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logoText {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fafafa;
+  text-decoration: none;
+  font-family: 'Satisfy', cursive;
+
+}
+
+/* Curses Button Styling */
+.curses-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #1f1e42;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  position: relative;
+  right: 50px;
+  font-family: 'Satisfy', cursive;
+  margin-left:10px;
+
+
+}
+
+.curses-button:hover {
+  background-color: #33337b;
+  transform: scale(1.05);
+}
+
+/* Hidden Flexbox Panel */
+.extra-panel2 {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 180px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease;
+  margin-right: 35px;
+}
+.extra-panel1 {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 150px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease;
+  margin-right: -15px;
+  
+}
+
+.extra-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #33337b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Satisfy', cursive;
+  font-weight: 200;
+}
+
+.extra-button:hover {
+  background-color: #1f1e42;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main Content Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.content {
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Platform Description Section */
+.platform-description {
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 2px solid #33337b;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #33337b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.mainTitle{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-left: 5px solid #33337b;
+  background-color: #e8ecf8;
+  border-radius: 8px;
+}
+
+.feature-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f1e42;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #444;
+  background-color: #f4f4f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.feature ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.feature ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #1f1e42;
+}
+
+.feature ul li:hover {
+  color: #33337b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Accent Color for Links and Headings */
+.feature-title, .section-title {
+  color: #1f1e42;
+}
+
+.feature p {
+  background-color: #f4f4f9;
+  padding: 15px;
+  border-radius: 8px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.feature ul li {
+  color: #333;
+}
+
+.feature ul li strong {
+  color: #33337b;
+  font-weight: 700;
+}
+.image{
+  border-radius: 50000000px;
+  width: 50px;
+  margin-right: 5px;
+}
+.headers1{
+  margin-left: 1070px;
+}
+.headers2{
+  margin-left:-150px ;
+}

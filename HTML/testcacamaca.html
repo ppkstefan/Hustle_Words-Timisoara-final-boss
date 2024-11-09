@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Flexbox Toggle UI</title>
+  <link rel="stylesheet" href="/CSS/testcacamaca.css">
+</head>
+<body>
+
+  <!-- Header with Curses Button -->
+  <div class="header">
+    <div class="header-content">
+      <div class="logo">
+        <a href="/HTML/testcacamaca.html" class="logoText"><strong>HustleWords</strong></a>
+      </div>
+      <!-- "Curses" Button to Show/Hide the Extra Panel -->
+       <div class="headers1">
+        
+        <button class="curses-button" id="cursesButton2"><strong>Learn English</strong></button>
+       </div>
+      <div class="headers2">
+        <button class="curses-button" id="cursesButton1"><strong>TOOLS</strong></button>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Platform Description Sections -->
+  <div class="platform-description">
+    <div class="platform-description">
+      <h2 class="mainTitle">Welcome to Our English Learning Platform</h2>
+      <p>Our platform is dedicated to helping you learn and master the English language in an engaging and interactive way. Whether you're a beginner or looking to improve your skills, we provide a variety of tools designed to cater to your needs. Explore our features below to see how we can assist you on your learning journey.</p>
+    <!-- Translate Tool Section -->
+    <a href="/HTML/Synonimes.html"><h2 class="section-title">Translate Tool</h2></a>
+    <div class="feature">
+      <h3 class="feature-title">Enhance Understanding with Translation</h3>
+      <p>
+        Our Translate Tool lets you instantly translate any English word or phrase, helping you understand context and meaning quickly and easily. Improve comprehension and expand your vocabulary with just a click!
+      </p>
+      <ul>
+        <li><strong>Instant Translations:</strong> Translate words or entire sentences within seconds.</li>
+        <li><strong>Language Support:</strong> Translate between a variety of languages.</li>
+        <li><strong>Contextual Accuracy:</strong> Get context-sensitive translations to help you better understand the meaning.</li>
+      </ul>
+    </div>
+
+    <!-- Dictionary Section -->
+    <a href="/HTML/proiect Timisoara.html"><h2 class="section-title">Dictionary</h2></a>
+    <div class="feature">
+      <h3 class="feature-title">Find Definitions with Ease</h3>
+      <p>
+        Need a quick definition? Our integrated Dictionary feature provides detailed explanations, synonyms, and example sentences, making it easy to understand and remember new words.
+      </p>
+      <ul>
+        <li><strong>Word Definitions:</strong> Detailed explanations of words to ensure a deep understanding.</li>
+        <li><strong>Pronunciation Guide:</strong> Learn the correct pronunciation of words with audio examples.</li>
+        <li><strong>Synonyms & Antonyms:</strong> Find similar words and opposites to expand your vocabulary.</li>
+        <li><strong>Example Sentences:</strong> See how words are used in different contexts.</li>
+      </ul>
+    </div>
+
+    <!-- Games and Exercises Section -->
+    <h2 class="section-title">Games and Exercises</h2>
+    <div class="feature">
+      <h3 class="feature-title">Practice and Learn in a Fun Way</h3>
+      <p>
+        Learning English should be fun! Explore a range of games and exercises designed to help you practice vocabulary, grammar, and comprehension in an engaging and interactive way.
+      </p>
+      <ul>
+        <li><strong>Grammar Games:</strong> Reinforce your grammar knowledge through interactive exercises.</li>
+        <li><strong>Vocabulary Challenges:</strong> Test your word knowledge and recall ability.</li>
+        <li><strong>Listening Exercises:</strong> Improve your listening skills with engaging audio challenges.</li>
+        <li><strong>Timed Challenges:</strong> Push your skills with exciting timed games.</li>
+      </ul>
+
+    </div>
+
+    <!-- AI Writing Assistant Section -->
+    <a href="/HTML/chatAI.html"><h2 class="section-title">AI Writing Assistant: Your Smart Grammar and Chat Companion</h2></a>
+    <div class="feature">
+      <h3 class="feature-title">Enhance Your English Writing Skills</h3>
+      <p>
+        Our AI Writing Assistant acts as your personal grammar guide and conversation partner, ensuring that your writing is clear and professional. Whether crafting emails, essays, or social posts, it provides real-time feedback and suggestions to make your writing accurate and engaging.
+      </p>
+      <ul>
+        <li><strong>Grammar and Style Checks</strong>: Detects errors and suggests improvements for polished writing.</li>
+        <li><strong>Chat Companion Mode</strong>: A friendly AI partner to help you brainstorm, refine language, and boost confidence.</li>
+        <li><strong>Real-Time Feedback</strong>: Instantly corrects and enhances your work as you type.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hidden Flexbox Panel for Translate and Dictionary -->
+  <div class="extra-panel1" id="extraPanel">
+       <a href="/HTML/Synonimes.html"><button class="extra-button" onclick="openTranslate()">Translate</button></a>
+    <a href="/HTML/proiect Timisoara.html"><button class="extra-button" onclick="openTranslate()">Dictionary</button>
+      <a href="/HTML/chatAI.html"><button class="extra-button" onclick="openTranslate()">HustleChat</button>
+  </div>
+  <div class="extra-panel2" id="extraPanel1">
+    <a href="/HTML/wordle.html"><button class="extra-button" onclick="openTranslate()">WordGuessingGame</button></a>
+    <a href="/HTML/proiect Timisoara.html"><button class="extra-button" onclick="openTranslate()">Exercises</button> 
+  </div>
+
+  <script src="/JavaScript/flexboxScript.js"></script>
+</body>
+</html>
